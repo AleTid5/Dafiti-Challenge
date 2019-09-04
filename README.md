@@ -11,14 +11,14 @@ _Examen técnico de DAFITI para posición Full-Stack Developer. El mismo se comp
 #### Backend
 Para comenzar, se deben instalar las dependencias
 ```bash
-cd Backend &&
+cd backend &&
 composer install &&
 cd ..
 ```
 
 Luego, ejecutar los tests
 ```bash
-cd Backend &&
+cd backend &&
 ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/PokerControllerTest.php &&
 cd ..
 ```
