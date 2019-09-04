@@ -1,5 +1,5 @@
 # Challenge Dafiti
-###### Descripción
+#### Descripción
 _Examen técnico de DAFITI para posición Full-Stack Developer. El mismo se compone de:_
 
 **·** Backend: Validador de "Escaleras" de Póker en **PHP**.
@@ -8,7 +8,7 @@ _Examen técnico de DAFITI para posición Full-Stack Developer. El mismo se comp
 
 **·** Base de datos: Ejercicio en **MySQL**.
 
-###### Backend
+#### Backend
 Para comenzar, se deben instalar las dependencias
 ```bash
 cd Backend &&
