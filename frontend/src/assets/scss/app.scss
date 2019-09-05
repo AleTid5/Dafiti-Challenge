@@ -57,9 +57,9 @@ body {
     }
 
     .circle {
-      width: 60%;
+      width: 100%;
       font-size: 20px;
-      padding: 30% 0;
+      padding: 50% 0;
       border-radius: 50%;
       text-align: center;
       position: relative;
@@ -68,27 +68,6 @@ body {
       color: $grey;
       font-weight: 700;
       margin: 0 auto;
-    }
-
-    @media screen and(max-width: 1450px){
-      .circle {
-        width: 70%;
-        padding: 35% 0;
-      }
-    }
-
-    @media screen and(max-width: 1300px){
-      .circle {
-        width: 80%;
-        padding: 40% 0;
-      }
-    }
-
-    @media screen and(max-width: 1100px){
-      .circle {
-        width: 100%;
-        padding: 50% 0;
-      }
     }
 
     @media screen and(max-width: 650px){
@@ -107,6 +86,9 @@ body {
     }
 
     .item-description {
+      max-width: 600px;
+      margin: 0 auto;
+
       .item-header {
         h3 {
           @extend .mt-32;
