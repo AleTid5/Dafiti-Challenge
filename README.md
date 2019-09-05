@@ -36,3 +36,9 @@ Luego, ejecutar el cliente
 cd frontend &&
 npm start
 ```
+
+#### Database
+El archivo que contiene las consultas se encuentra dentro de 'database'
+```bash
+cd database
+```
