@@ -22,3 +22,17 @@ cd backend &&
 ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/PokerControllerTest.php &&
 cd ..
 ```
+
+#### Frontend
+Para comenzar, se deben instalar las dependencias
+```bash
+cd frontend &&
+npm i &&
+cd ..
+```
+
+Luego, ejecutar el cliente
+```bash
+cd frontend &&
+npm start
+```

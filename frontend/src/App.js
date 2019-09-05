@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import './assets/scss/app.scss';

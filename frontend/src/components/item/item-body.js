@@ -5,10 +5,6 @@ import twitter from '../../assets/img/twitter.png';
 import whatsapp from '../../assets/img/whatsapp.png';
 
 export default class ItemBody extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render = () => (
     <Col xs={{size: 12}} className="item-body">
       <Row>
@@ -23,9 +19,9 @@ export default class ItemBody extends Component {
           <Progress color="default" value="95" />
         </Col>
         <Col xs={{size: 12}} className="mt-3 text-center">
-          <img src={facebook} alt="facebook" width="30" />
-          <img src={twitter} alt="twitter" width="50" />
-          <img src={whatsapp} alt="whatsapp" width="35" />
+          <img src={facebook} alt="facebook" width="30" className="clickable" />
+          <img src={twitter} alt="twitter" width="50" className="clickable" />
+          <img src={whatsapp} alt="whatsapp" width="35" className="clickable" />
         </Col>
       </Row>
     </Col>

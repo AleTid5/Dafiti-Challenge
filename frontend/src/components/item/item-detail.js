@@ -1,10 +1,9 @@
 import React, { Component } from "react"
-import {Col, Row} from "reactstrap";
+import Collapse from "../base/collapse";
 
 export default class ItemDetail extends Component {
   render = () => (
-    <Col xs={{size: 12}} className="item-header">
-
-    </Col>
+    <Collapse title="Detalle"
+              description={this.props.description} />
   );
 }

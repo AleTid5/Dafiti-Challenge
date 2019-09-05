@@ -3,28 +3,21 @@ import { IconContext } from "react-icons";
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 import {Col, Row, Collapse as Collapsable} from "reactstrap";
 import Separator from "./separator";
+import { htmlCleaner } from "../../utils/helpers";
 
 export default class Collapse extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   state = {
     selected: false
   };
 
-  createMarkup() {
-    return {__html: this.props.description};
-  }
-
   render = () => (
     <React.Fragment>
-      <Col xs={{size: 12}} className="item-body">
+      <Col xs={{size: 12}} className="item-body mt-3">
         <Row>
-          <Col xs={{size: 6}}>
+          <Col xs={{size: 10}}>
             <h3>{ this.props.title }</h3>
           </Col>
-          <Col xs={{size: 6}}>
+          <Col xs={{size: 2}}>
             <IconContext.Provider value={{ size: '2em', className: "icon"}}>
               <div onClick={() => this.setState({selected: ! this.state.selected}) }
                    className="clickable pull-right">
@@ -35,13 +28,12 @@ export default class Collapse extends Component {
         </Row>
       </Col>
       <Separator />
-      <Collapsable isOpen={this.state.selected}>
+      <Collapsable isOpen={this.state.selected} className="item-body">
           <Col xs={{size: 12}}>
             <Row>
-              <Col xs={{size: 12}}>
-                {  }
-                <div dangerouslySetInnerHTML={this.createMarkup()} />
-              </Col>
+              <Col xs={{size: 12}}
+                   className="description"
+                   dangerouslySetInnerHTML={{__html: htmlCleaner(this.props.description)}} />
             </Row>
           </Col>
       </Collapsable>
